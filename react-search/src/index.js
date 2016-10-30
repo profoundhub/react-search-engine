@@ -12,23 +12,29 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <SearchBar onTermChange={this.handleTermChange} />
+        <SearchBar onTermChange={ this.handleTermChange } />
       </div>
     );
   }
 }
 
-/* Was:
+/* 
 
-return React.createElement(
-        "div",
-        { "class": "greeting" },
-        React.createElement(
-              "p",
-              { "class": "greeting-text" },
-              "Hello Happy World!"
-        )
-);
+... Was:
+
+
+  "
+      return React.createElement(
+              "div",
+              { "class": "greeting" },
+              React.createElement(
+                    "p",
+                    { "class": "greeting-text" },
+                    "Hello Happy World!"
+              )
+      );
+  "
 
 */
+
 ReactDOM.render(<App />, display);
