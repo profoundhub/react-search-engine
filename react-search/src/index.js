@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <SearchBar onTermChange={this.handleTermChange} />
+        <SearchBar onTermChange={ this.handleTermChange } />
       </div>
     );
   }
