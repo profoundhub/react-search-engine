@@ -22,13 +22,13 @@ class SearchBar extends React.Component {
 
 /*
 
-Using:
+... Using:
 
   "
     e => this.onInputChange(e.target.value)
   "
 
-... instead of:
+... Instead of:
 
   "
     function(event) {
