@@ -19,7 +19,7 @@ class App extends React.Component {
   handleTermChange(term) {
     console.log(term);
     
-    const url = 'http://api.giphy.com/v1/gifs/search?q=${term}&api_key=dc6zaTOxFJmzC';
+    const url = `http://api.giphy.com/v1/gifs/search?q=${ term }&api_key=dc6zaTOxFJmzC`;
 
     request.get(url, function(err, res) {
       console.log(res.body.data[0]);
@@ -31,7 +31,7 @@ class App extends React.Component {
     return (
       <div>
         <SearchBar onTermChange={ this.handleTermChange } />
-        <GifList gifs={this.state.gifs} />
+        <GifList gifs={ this.state.gifs } />
       </div>
     );
   }
