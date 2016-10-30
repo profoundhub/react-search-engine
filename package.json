@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "yarn": "^0.16.1"
+  },
+  "dependencies": {
+    "superagent": "^2.3.0"
   }
 }
