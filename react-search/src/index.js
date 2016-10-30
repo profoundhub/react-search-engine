@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SearchBar from './components/SearchBar';
 
 const display = document.getElementById('app');
 
 class App extends React.Component {
   render() {
     return (
-      <div class="greeting">
-        <p class="greeting-text">Hello Happy Worlds!</p>
+      <div>
+        <SearchBar />
       </div>
     );
   }
