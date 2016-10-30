@@ -1,3 +1,6 @@
+node_modules
+react-search/node_modules
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -20,6 +23,8 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+.privates
+
 
 # OSX
 # =========================
