@@ -1,6 +1,7 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = { term: '' }
@@ -22,13 +23,13 @@ class SearchBar extends React.Component {
 
 /*
 
-Using:
+... Using:
 
   "
     e => this.onInputChange(e.target.value)
   "
 
-... instead of:
+... Instead of:
 
   "
     function(event) {
