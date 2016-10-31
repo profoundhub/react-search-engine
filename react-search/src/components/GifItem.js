@@ -3,11 +3,11 @@ import React from 'react';
 // Stateless Functional Component
 
 // const GifItem = (image) => {
-    
-    const GifItem = ({gif, onGifSelect}) => {
+
+    const GifItem = ({ gif, onGifSelect }) => {
         return (
             <div className="gif-item">
-                <img src={image.gif.images.downsized.url} alt="" />        
+                <img src={ image.gif.images.downsized.url } alt="" />        
             </div>
         )
     };
