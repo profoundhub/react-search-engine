@@ -21,6 +21,7 @@
     font-size: .85em;
     margin: 1.5em 0;
     padding: 0;
+    list-style: none;
 }
 
 input {
