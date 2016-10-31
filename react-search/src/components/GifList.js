@@ -6,7 +6,7 @@ const GifList = (props) => {
 // instead of ... var GifList = function(props) {}
 
   const gifItems = props.gifs.map((image) => { 
-    return <GifItem key={ image.id } gif={ image } />
+    return <GifItem key={ image.id } gif={ image } onGifSelect={ props.onGifSelect } />
   });
 
   return (
