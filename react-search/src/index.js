@@ -13,12 +13,27 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-        gifs: []
+        gifs: [],
+        selectedGif: null,
+        modalIsOpen: false
     };
     //    this.handleTermChange = this.handleTermChange.bind(this);
   } 
+  openModal(gif) {
+    this.setState({
+      modalIsOpen: true,
+      selectedGif: gif
+    });
+  }
 
-   handleTermChange = (term) => {
+  closeModal() {
+    this.setState({
+      modalIsOpen: false,
+      selectedGif: null
+    });
+  }
+
+  handleTermChange = (term) => {
     console.log(term);
     const url = `http://api.giphy.com/v1/gifs/search?q=${term.replace(/\s/g, '+')}&api_key=dc6zaTOxFJmzC`;
       
