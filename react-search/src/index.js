@@ -48,8 +48,8 @@ class App extends React.Component {
       <div>
         <SearchBar onTermChange={ this.handleTermChange } />
         <GifList gifs={ this.state.gifs } />
-        <GifModal modalIsOpen={this.state.modalIsOpen}
-                  selectedGif={this.state.selectedGif}
+        <GifModal modalIsOpen={ this.state.modalIsOpen }
+                  selectedGif={ this.state.selectedGif }
                   onRequestClose={ () => this.closeModal() } />
       </div>
     );
