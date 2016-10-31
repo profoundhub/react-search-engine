@@ -70,3 +70,13 @@ input {
         width: 1140px;
     }
 }
+
+.ProfoundLogo {
+    max-width: 50%;
+}
+
+.ProfoundAround {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
