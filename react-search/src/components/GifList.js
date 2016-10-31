@@ -1,7 +1,7 @@
 import React from 'react';
 import GifItem from './GifItem';
 
-// stateless functional component
+// Stateless Functional Component (SFC)
 const GifList = (props) => { 
 // instead of ... var GifList = function(props) {}
 
@@ -10,9 +10,8 @@ const GifList = (props) => {
   });
 
   return (
-    <ul>{ gifItems }</ul>
+    <div className="gif-list">{gifItems}</div>
   );
-
 };
 
 export default GifList;

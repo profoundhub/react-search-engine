@@ -3,6 +3,7 @@
     "yarn": "^0.16.1"
   },
   "dependencies": {
+    "react-modal": "^1.5.2",
     "superagent": "^2.3.0"
   }
 }

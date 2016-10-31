@@ -4,10 +4,12 @@ import React from 'react';
 
 const GifItem = (image) => {
   return (
-    <li>
-      <img src={ image.gif.url } alt="" />
-    </li>
+    <div className="gif-item">
+        <img src={image.gif.images.downsized.url} alt="" />        
+    </div>
   )
 };
+
+// <img src={ image.gif.url } alt="" />
 
 export default GifItem;
