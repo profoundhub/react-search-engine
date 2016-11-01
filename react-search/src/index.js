@@ -18,7 +18,6 @@ class App extends React.Component {
         selectedGif: null,
         modalIsOpen: false
     };
-    //    this.handleTermChange = this.handleTermChange.bind(this);
   } 
   openModal(gif) {
     this.setState({
@@ -36,7 +35,7 @@ class App extends React.Component {
 
   handleTermChange = (term) => {
     console.log(term);
-    const url = `http://api.giphy.com/v1/gifs/search?q=${term.replace(/\s/g, '+')}&api_key=dc6zaTOxFJmzC`;
+    const url = `http://api.giphy.com/v1/gifs/search?q=${ term.replace(/\s/g, '+') }&api_key=dc6zaTOxFJmzC`;
       
       request.get(url, (err, res) => {
         this.setState({ gifs: res.body.data })      
@@ -57,21 +56,5 @@ class App extends React.Component {
     );
   }
 }
-
-
-/*
-... Was:
-  "
-      return React.createElement(
-              "div",
-              { "class": "greeting" },
-              React.createElement(
-                    "p",
-                    { "class": "greeting-text" },
-                    "Hello Happy World!"
-              )
-      );
-  "
-*/
 
 ReactDOM.render(<App />, display);
