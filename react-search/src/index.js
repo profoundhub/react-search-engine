@@ -12,19 +12,35 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-
     this.state = {
         gifs: [],
         selectedGif: null,
         modalIsOpen: false
     };
   } 
+
   openModal(gif) {
     this.setState({
       modalIsOpen: true,
       selectedGif: gif
     });
   }
+  
+  /*
+    // reducer for handling multiple gif-related actions
+      function gifs(state, action) {
+        switch (action.type) {
+          case OPEN_MODAL:
+            return {
+                  ...state,
+                  modalIsOpen: true,
+                  selectedGif: action.gif.selectedGif
+            };
+          default:
+              return state;
+        }
+      }
+*/
 
   closeModal() {
     this.setState({
@@ -55,6 +71,7 @@ class App extends React.Component {
       </div>
     );
   }
+
 }
 
 ReactDOM.render(<App />, display);
