@@ -12,20 +12,35 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-
     this.state = {
         gifs: [],
         selectedGif: null,
         modalIsOpen: false
     };
-    //    this.handleTermChange = this.handleTermChange.bind(this);
   } 
+
   openModal(gif) {
     this.setState({
       modalIsOpen: true,
       selectedGif: gif
     });
   }
+  
+  /*
+    // reducer for handling multiple gif-related actions
+      function gifs(state, action) {
+        switch (action.type) {
+          case OPEN_MODAL:
+            return {
+                  ...state,
+                  modalIsOpen: true,
+                  selectedGif: action.gif.selectedGif
+            };
+          default:
+              return state;
+        }
+      }
+*/
 
   closeModal() {
     this.setState({
@@ -36,7 +51,7 @@ class App extends React.Component {
 
   handleTermChange = (term) => {
     console.log(term);
-    const url = `http://api.giphy.com/v1/gifs/search?q=${term.replace(/\s/g, '+')}&api_key=dc6zaTOxFJmzC`;
+    const url = `http://api.giphy.com/v1/gifs/search?q=${ term.replace(/\s/g, '+') }&api_key=dc6zaTOxFJmzC`;
       
       request.get(url, (err, res) => {
         this.setState({ gifs: res.body.data })      
@@ -56,22 +71,7 @@ class App extends React.Component {
       </div>
     );
   }
+
 }
-
-
-/*
-... Was:
-  "
-      return React.createElement(
-              "div",
-              { "class": "greeting" },
-              React.createElement(
-                    "p",
-                    { "class": "greeting-text" },
-                    "Hello Happy World!"
-              )
-      );
-  "
-*/
 
 ReactDOM.render(<App />, display);

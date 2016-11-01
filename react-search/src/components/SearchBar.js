@@ -26,21 +26,4 @@ class SearchBar extends React.Component {
   }
 }
 
-/*
-
-... Using:
-
-  "
-    e => this.onInputChange(e.target.value)
-  "
-
-... Instead of:
-
-  "
-    function(event) {
-        this.onInputChange(event.target.value);
-    }
-  "
-*/
-
 export default SearchBar;
