@@ -1,10 +1,10 @@
 {
   "devDependencies": {
-    "yarn": "^0.16.1"
+    "yarn": "^0.18.1"
   },
   "dependencies": {
     "react-modal": "^1.5.2",
-    "react-redux": "^4.4.5",
-    "superagent": "^2.3.0"
+    "react-redux": "^5.0.1",
+    "superagent": "^3.3.1"
   }
 }
